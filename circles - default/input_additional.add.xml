@@ -1,0 +1,11 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <route id="circle" edges="a b a"/>
+    <rerouter id="rerouter" edges="a">
+        <interval begin="0" end="2000">
+            <routeProbReroute id="circle"/>
+        </interval>
+    </rerouter>
+
+    <e1Detector id="det_0" lane="a_0" pos="50" freq="8" file="output_detector.out.xml" />
+    <e1Detector id="det_1" lane="a_0" pos="250" freq="15" file="output_detector1.out.xml" />
+</additional>
